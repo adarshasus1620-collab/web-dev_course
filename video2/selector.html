@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector</title>
+    <style>
+
+    /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+         /* Class selector */
+         .red{
+            background-color:red;
+         }
+
+       /* id selector */
+          #green{
+            background-color:green;
+          }
+
+          /* Child Selector  */
+          div > p{
+            color: blue;
+            background-color: yellow;
+          }
+
+          /* Descendant Selector */
+           div p{
+            color: white;
+            background-color: black;
+           }
+
+           /* Univarsal Selector */
+           *{
+            margin: 0;
+            padding: 0;
+           }
+
+           /* Pseudo Selector */
+           a:visited{
+            color: red;
+           }
+
+           a:link{
+            color: green;
+           }
+
+           a:active{
+            background-color: blue;
+           }
+           a:hover{
+            background-color: pink;
+           }
+
+           p:first-child{
+            background-color: skyblue;
+           }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p> I am the one </p>
+        <p> I am the two</p>
+    </main>
+
+
+    <div class="red">
+         I  am a div
+         <article>
+             <p> I am a paragraph inside the article </p>
+         </article>
+         
+     </div>
+     
+     <div id ="green">
+        Iam anothre div
+     </div>
+     <div>
+    
+        <a href="https://www.google.com">hack the Google</a>
+        <a href="https://www.facebook.com">hack the Facebook</a>
+     </div>
+
+</body>
+</html>
