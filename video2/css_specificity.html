@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* This specificity  of the selector is 1 */
+        h1{
+            color:aqua;
+        }
+
+        /* The specificity or the select is  1+10 */
+
+        h1.cred{
+            color:red;
+        }
+        
+        .cpurpul{
+            color:purple !important ;
+        }
+
+        .yello{
+            color:yellow;
+        }
+        /* This is an examle of attrubute selector  */
+        /* The secificity of the selector is 10 */
+       /* [data-x=a]{
+            background-color:red;
+        } */
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <h1 class="yello cred cpurpul" 
+         data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
