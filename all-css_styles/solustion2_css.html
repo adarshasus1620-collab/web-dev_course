@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styles</title>
+
+    <style>
+        body {
+            background-color: rgb(227, 227, 227);
+            height: 1000px;
+        }
+
+        .box {
+            border: 2px solid rgb(228, 223, 223);
+            width: 400px;
+            height: 700px;
+            border-radius: 25px;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            bottom: 50px;
+            align-items: center;
+            margin-left: 450px;
+            margin-top: 0px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+
+            /* margin-right: auto; */
+        }
+
+        .viewport {
+            border: 2px solid rgb(235, 235, 235);
+            width: 370px;
+            height: 270px;
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            border-radius: 25px;
+            background-image: url("https://imgd.aeplcdn.com/664x374/n/cw/ec/199225/160-duke-left-rear-three-quarter.jpeg?isig=0&q=80") ;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+
+        }
+
+        .eng {
+            border: 2px solid rgb(249, 245, 245);
+            width: 63px;
+            height: 25px;
+            border-radius: 20px;
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            top: 300px;
+            left: 115px;
+            padding-top: 4px;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+        }
+
+        .fea {
+            border: 2px solid rgb(255, 255, 255);
+            width: 67px;
+            height: 25px;
+            border-radius: 20px;
+            position: absolute;
+            top: 300px;
+            left: 30px;
+            justify-content: center;
+            padding-top: 4px;
+            text-align: center;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0 10px 18px rgba(0,0,0,0.1);
+        }
+
+        .ktm {
+            display: inline-flex;
+            margin-top: 340px;
+            margin-left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.771);
+
+        }
+
+        .duke {
+            /* display: inline-flex; */
+            display: flex;
+            justify-content: center;
+            text-align: justify;
+            padding: 30px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            letter-spacing: 1px;
+            margin-top: -40px;
+
+
+
+
+
+        }
+
+        .info {
+            border: 2px solid rgb(255, 255, 255);
+            width: 130px;
+            height: 45px;
+            position: absolute;
+            bottom: 10px;
+            margin-left: 129px;
+            border-radius: 28px;
+            color: rgba(75, 75, 219, 0.642);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+            text-align: center;
+            padding-top: 0px;
+            align-items: center;
+            display: flex;
+            background-color: #d7eaf0;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+
+
+        }
+
+        a {
+            text-decoration: none;
+            position: absolute;
+            align-items: center;
+            color: rgba(5, 5, 253, 0.566);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <div class="viewport">
+            
+        </div>
+
+        <div class="eng">
+            Engine
+        </div>
+        <div class="fea">
+            Feature
+        </div>
+        <div class="ktm">
+            <h2>
+                KTM 160 DUKE
+            </h2>
+        </div>
+        <div class="duke">
+            <p>
+                KTM 160 Duke is a naked sport bike manufactured by KTM.
+                It was launched in India in 2012 and is powered
+                by a 160cc single-cylinder engine. The bike is known
+                for its aggressive styling, lightweight design, and
+                excellent performance on both city roads and highways.
+            </p>
+        </div>
+
+        <div class="info">
+            <a href="https://www.bikewale.com/ktm-bikes/160-duke/" target="_blank">Read More</a>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

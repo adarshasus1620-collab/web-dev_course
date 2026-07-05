@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <style>
+      /* :root {
+      --bg-color: #f0f4f8;
+      --text-color: #1f2937;
+      --accent-color: #3b82f6;
+      --font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-family);
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      border: 1px solid rgba(31, 41, 55, 0.1);
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(31, 41, 55, 0.1);
+      background: white;
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      color: var(--accent-color);
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    } */
+     :root{
+      --color: rgb(217, 255, 0);
+      --selector: rgb(147, 219, 236);
+      --defpad: 23px;
+      --defop: 0.4;
+     }
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    ul{
+      display: flex;
+    }
+
+    ul li{
+      opacity: var(--defop);
+      list-style: none;
+      padding: var(--defpad);
+      border: 2px solid var(--selector)
+    }
+    ul li:first-child{
+      --color: rgb(18, 248, 6);
+      background-color: var(--color, blue);
+
+    }
+
+    .nav{
+      background-color: var(--color);
+    }
+
+    .container{
+      background-color: var(--selector);
+
+    }
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    
+     
+      <div class="container">
+
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio 
+       quisquam unde aliquam incidunt vel nihil
+       laudantium at ab, consequatur corporis perferendis iste sint
+       neque. Quod cum fugit eveniet molestiae aperiam minus
+       iure! Impedit sapiente provident magnam! Veniam saepe 
+       consequatur ipsum, dolorum pariatur cumque quos. Quidem.
+      </div>
+
+    
+    <!-- <div class="container">
+    <h1>CSS Variables in Action</h1>
+    <p>This page uses custom properties for colors, fonts, and layout styling.</p>
+  </div> -->
+  </body>
+
+</html>
