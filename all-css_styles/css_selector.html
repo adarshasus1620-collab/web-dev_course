@@ -29,17 +29,44 @@
                 background-color: blue;
             } */
 
-            .box:nth-last-child(1){
+            /* .box:nth-last-child(1){
                   background-color: red;
+            } */
+
+            .boxes::before{
+                content: "  Adarsh is  good";
+                color: blueviolet;
             }
+
+            .boxes::after{
+                content: "learning Signa web_devlopment";
+                color: red;
+
+            }
+
+            .boxes::selection{
+                color: aqua;
+                background-color: red;
+            }
+
+            .box::first-letter{
+                color: peru;
+                font-size: 40px;
+            }
+            input::placeholder{
+                color: rgb(178, 156, 69);
+            }
+
+
         </style>
     </head>
 
     <body>
         <div class="boxes">
             <div data-color="primary" class="box"> I am the frist box  </div>
-            <div class="box"> hi iam a box</div>
-            <div class="box"> hi iam a box</div>
+            <div class="box"> Hi iam a box</div>
+            <div class="box"> Hi iam a box</div>
+            <input type="text" placeholder=" Tyepe your Name  Here">
 
         </div>
 
