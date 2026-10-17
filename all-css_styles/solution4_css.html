@@ -6,6 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Solution 4</title>
         <style>
+            :root{
+                --primary-color: #d92ec0c7;
+                --text-color: white;
+                --seecondary-color: #c7b07e85;
+
+
+            }
+
+            body{
+                background-color: var(--seecondary-color);
+            }
+
+
             ul li {
                 list-style-type: none;
             }
@@ -14,12 +27,12 @@
                 display: inline;
                 padding: 20px;
                 font-weight: bolder;
-                color: white;
+                color: var(--text-color);
             }
 
 
             nav {
-                background-color: rgb(117, 79, 79);
+                background-color: var(--primary-color);
                 padding: 20px;
             }
 
@@ -29,6 +42,11 @@
                 font-family: 'poppins', sans-serif;
 
 
+            }
+
+            ul li a{
+                 color: var(--text-color);
+                 text-decoration: none;
             }
         </style>
         <style>
@@ -41,10 +59,10 @@
         <header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Contact Us </li>
+                    <li><a href = "/" >Home</a></li>
+                    <li><a href = "/" >About</a></li>
+                    <li><a href = "/" >Services</a></li>
+                    <li><a href = "/" >Contact Us</a> </li>
                 </ul>
             </nav>
         </header>
